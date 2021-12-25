@@ -70,8 +70,13 @@
                                         {
                                             if (product.brand_id == brand.id)
                                             {
+                                                var bg = "";
+                                                if (product.is_rgb)
+                                                    bg = "<div style='float:left; width: 15px; height: 15px; background-color: rgba(" + product.background + ")'></div>&nbsp;";
+                                                else
+                                                    bg = "<img width='20' src='public/images/products/"+ product.background + "'>&nbsp;";
                                                 text += "<li>";
-                                                    text += product.title;
+                                                    text += bg + product.title;
                                                 text += "</li>";
                                             }
                                         }

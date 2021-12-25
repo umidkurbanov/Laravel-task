@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 25, 2021 at 11:52 AM
+-- Generation Time: Dec 25, 2021 at 12:08 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.13
 
@@ -160,7 +160,7 @@ INSERT INTO `products` (`id`, `category_id`, `brand_id`, `title`, `slug`, `is_rg
 (8, 8, 5, 'Iphone 13 pro', 'iphone-13-pro', 1, '100,100,50'),
 (9, 6, 10, 'Lenovo IdeaPad Slim 9 14', 'lenovo-ideapad-slim-9-14', 1, '210,210,210'),
 (12, 8, 5, 'LG television', 'lg-television', 1, '120,120,120'),
-(13, 6, 5, 'test img', 'test-img', 0, 'aymsjjj7ijrjka6uv6so.png'),
+(13, 8, 5, 'Iphone 11', 'iphone-11', 0, 'aymsjjj7ijrjka6uv6so.png'),
 (14, 7, 11, 'LG 32 DYUM TV', 'lg-32-dyum-tv', 1, '100,200,250');
 
 -- --------------------------------------------------------
