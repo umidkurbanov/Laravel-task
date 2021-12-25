@@ -1,0 +1,60 @@
+@extends('layouts.layout')
+
+@section('content')
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                        <div class="page-title-right">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
+                                <li class="breadcrumb-item active">Brands</li>
+                                <li class="breadcrumb-item active">Edit</li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Edit brand
+                        </h4>
+                                <form method="POST">
+                                    @csrf
+                                    <div class="row">
+                                        <div class="mb-3">
+
+                                            <div class="mb-3">
+                                                <label for="formrow-login-input" class="form-label">Date</label>
+                                                <input type="text" class="form-control" id="formrow-login-input" name="title" required value="{{ $brand->title }}">
+                                            </div> 
+
+                                            <label for="formrow-firstname-input" class="form-label">Category</label>
+                                            <select name="category_id" class="form-control">
+                                                @foreach($categories as $category)
+                                                    <option value="{{ $category->id }}"
+                                                        <?php if ($category->id == $brand->category_id) echo " selected "; ?>
+                                                    >{{ $category->title }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div> 
+                                    </div>
+                                    
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-success">Save changes</button>
+                                        <a href="{{ route('brands') }}"><button type="button" class="btn btn-light" >Cancel</button></a>
+                                    </div>
+                                </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
