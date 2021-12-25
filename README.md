@@ -21,4 +21,9 @@ You can manage products in "Products menu". In this page you can add, edit and d
 ## JSON & AJAX
 In "JSON DATA" menu you can get all categories and their products. To get JSON data as a tree click the button "Load Data via AJAX & JSON"
 
+
+## Database
+MYSQL. Base file: "laravel_task_rus.sql".
+
+
 Umid Kurbanov.
